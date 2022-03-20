@@ -24,5 +24,5 @@
 Screenshot:
 ![alt tag](https://user-images.githubusercontent.com/99215212/157803765-bfe9157b-3c7c-4df7-a1b1-71a9b3f2ab83.png "screenshot") 
 
-To view the new website, please click https://lnbredemeyer.github.io/homework-1/
+To view the new website, please click https://lnbredemeyer.github.io/lnb-portfolio/
 ```
