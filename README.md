@@ -21,8 +21,11 @@
 * WHEN they resize the page or view the site on various screens and devices
 * THEN they are presented with a responsive layout that adapts to my viewport
 
-Screenshot:
-![alt tag](https://user-images.githubusercontent.com/99215212/157803765-bfe9157b-3c7c-4df7-a1b1-71a9b3f2ab83.png "screenshot") 
+Screenshot desktop:
+![alt tag](https://user-images.githubusercontent.com/99215212/159144406-5ff6c377-362c-4271-b110-28ab475761c1.png "screenshot-big") 
+
+Screenshot phone:
+![alt tag](https://user-images.githubusercontent.com/99215212/159144419-4006ac73-eb69-4646-8ef0-02c7fc8cf0b6.png "screenshot-small") 
 
 To view the new website, please click https://lnbredemeyer.github.io/lnb-portfolio/
 ```
