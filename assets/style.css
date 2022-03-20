@@ -1,3 +1,4 @@
+/* Color scheme all blues please! */
 :root {
     --mid-blue: #35858B;
     --font-color: #fff;
@@ -6,6 +7,7 @@
     --bright-blue: #4FBDBA;
 }
 
+/* Arial, Helvetica & san-serif used throughout to keep it simple */
 body {
     display: flex;
     font-family: Arial, Helvetica, sans-serif;
@@ -22,6 +24,8 @@ h2 {
     font-size: 150%;
 }
 
+/* header when viewed by desktop should go all the way across the screen and have clickable links to jump down to section below */
+/* I googled how to jump down to page, tried IDs in the HTML, but pretty sure it needs to be a javaScript -- still not sure how to do that */
 header {
     display: flex;
     justify-content: space-between;
@@ -54,24 +58,36 @@ nav a:hover {
   text-shadow: 1px 2px 2px var(--dark-blue);
 }
 
+/* Keep all text links with original colors */
+a:link {
+    color:inherit;
+ }
+
+ a:visited {
+    color:inherit;
+ }
+
 main {
     display: flex;
-    justify-content: space-around;
-    align-items: center;
     padding: 1%;
+    justify-content: center;
 }
 
 div {
     display: flex;
-    justify-content: center;
     align-items: center;
-}
-
-aside {
-    flex-direction: row;
     justify-content: center;
+    align-content: space-around;
 }
 
+div h2:hover {
+    color: var(--light-blue);
+}
+
+aside{
+    text-align: center;
+}
+/* basic footer with copywrite */
 footer {
   width: 100%;
   text-align: center;
@@ -86,10 +102,7 @@ footer {
 
 .row {
     flex-direction: row;
-}
-
-.left-column {
-    width: 25%;
+    justify-content: center;
 }
 
 .portrait {
@@ -103,21 +116,44 @@ footer {
     text-align: justify;
     margin: 20px;
     padding: 20px;
-    padding-left: 100px;
-    border-left: 1px solid var(--dark-blue);
 }
 
+/* first image should be bigger than the others */
 .large-image {
     border: 1px solid var(--dark-blue);
-    background-image:"./assets/Images/Healy.jpg" ;
-    width: 30%;
+    background-image: url(https://media.istockphoto.com/photos/camera-lens-with-red-and-blue-backlight-macro-photography-lenses-picture-id1187951204?s=612x612);
+    width: 100%;
+    height: auto;
+    padding: 50px 0px 50px 15px;
+    color: var(--font-color);
+    text-shadow: 1px 1px 2px black;
+    margin: 5px;
+    flex: 2;
 }
 
-.small-image {
-    width: 15%;
-    align-content: space-around;
+.small-image-1 {
+    border: 1px solid var(--dark-blue);
+    background-image: url(https://media.istockphoto.com/photos/graphic-designer-at-work-color-samples-picture-id655926676?s=612x612);
+    width: 100%;
+    height: auto;
+    padding: 50px 0px 50px 15px;
+    color: var(--font-color);
+    text-shadow: 1px 1px 2px black;
+    margin: 5px;
+    flex: 1;
 }
 
+.small-image-2 {
+    border: 1px solid var(--dark-blue);
+    background-image: url(https://media.istockphoto.com/photos/programming-code-abstract-technology-background-of-software-developer-picture-id1224500457?s=612x612);
+    width: 100%;
+    height: auto;
+    padding: 50px 0px 50px 15px;
+    color: var(--font-color);
+    text-shadow: 1px 1px 2px black;
+    margin: 5px;
+    flex: 1;
+}
 .contact {
     flex-direction: column;
     align-content: center;
@@ -126,16 +162,30 @@ footer {
 }
 
 @media screen and (max-width: 992px) {
-  
+
 }
 
 @media screen and (max-width: 768px) {
-   .row {
-       flex-direction: column;
-       flex-wrap: wrap;
-   }
+    header{
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    section.row{
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .info {
+        width: 100%;
+    }
+
+    div{
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
 }
 
-@media screen and (max-width: 500px) {
-    
+@media screen and (max-width: 300px) {
+
 }
