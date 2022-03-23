@@ -15,8 +15,8 @@
         <nav>
           <ul>
             <li><a>About Me</a></li>
-            <li><a id="#work" alt="Work">Work</a></li>
-            <li><a id="#work" alt="Contact Me">Contact Me</a></li>
+            <li><a onclick="scrollFunction1()" alt="Work">Work</a></li>
+            <li><a onclick="scrollFunction2()" alt="Contact Me">Contact Me</a></li>
             <li><a href="https://github.com/lnbredemeyer" alt="Resume">Resume</a></li>
           </ul>
         </nav>
@@ -41,13 +41,13 @@
 
         <section>
             <div><a id="Work">
-                <h2 class="large-image"><a href="https://www.dropbox.com/sh/77s30zy4pwkl0zj/AADs0cMGWJnAwFiLAYOkfXQ0a?dl=0">Photography</a></h2>
+                <h2 class="large-image" href="work"><a href="https://www.dropbox.com/sh/77s30zy4pwkl0zj/AADs0cMGWJnAwFiLAYOkfXQ0a?dl=0">Photography</a></h2>
                 <h2 class="small-image-1"><a href="https://www.dropbox.com/sh/l68bws5oxatxngk/AAAFyYarSjbu70kudK5K2zgpa?dl=0">Graphic Design</a></h2>
                 <h2 class="small-image-2">Coding</h2>
             </div>    
         </section>
 
-        <section class="row">
+        <section class="row" id="word">
             <div class="contact">
               <h2>Contact Me</h2>
               <p>325.374.4654 • <a href = "mailto: lnbredemeyer@gmail.com">Email me</a> • <a href="https://github.com/lnbredemeyer">GitHub</a> • <a href="https://www.dropbox.com/sh/l68bws5oxatxngk/AAAFyYarSjbu70kudK5K2zgpa?dl=0">Portfolio</a></p>
@@ -58,6 +58,25 @@
       <footer>
         <p>Copyright ©2022 Made By Leah Bredemeyer</p>
       </footer>
+
+      <script>
+        function scrollFunction1() {
+          let e = document.getElementById("work");
+          e.scrollIntoView({
+            block: 'start',
+            behavior: 'smooth',
+            inline: 'start'
+          });
+        }
+        function scrollFunction2() {
+          let e = document.getElementById("word");
+          e.scrollIntoView({
+            block: 'end',
+            behavior: 'smooth',
+            inline: 'center'
+          });
+        }
+      </script>
 
   </body>
 
